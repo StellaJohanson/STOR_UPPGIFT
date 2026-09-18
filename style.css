@@ -3,22 +3,97 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
   height:100dvh;
-  width:80%;
+  width:90%;
   margin-left:auto;
   margin-right:auto;
   display:flex;
   flex-direction:column;
-
-  background: #ebe8e8;
+  background: #faf7fb;
+  font-family: sans-serif;
 }
+
 header{
-    width: auto;
-    height: 1000px;
-    background: #460505;
-}
-nav{
-    background: #000;
+    padding: 0.5rem;
+    background: #32304b;
+    background:radial-gradient(circle, #3e3670, rgb(53, 7, 78));
+    text-align: center;
+    font:bold 1rem sans-serif;
 }
 
+h1{
+    color:white;
+    margin-bottom: 1em;
+}
+
+h2{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+p{
+    margin-top: 1em;
+    margin-bottom: 1em; 
+}
+
+nav{
+    padding: 0.5rem;
+    background: rgb(40, 5, 72);
+    text-align: center;
+}
+
+main{
+    padding: 20px;
+    flex-grow:5;
+    box-shadow: 10px, 10px, 10px, rgb(150, 81, 81);
+}
+article{
+    padding: 2%;
+    display: grid;
+    grid-template-areas: 
+    "aa bb"
+    "cc dd";
+    gap: 10px;
+}
+
+div{
+    aspect-ratio: 9/6;
+    --height:100px
+    object-fit:cover;
+    background-position: Center;
+    background-size: cover;
+}
+
+div:nth-child(1){
+    grid-area: aa;
+    background-image: URL("https://www.fightercentre.com/wp-content/uploads/2019/06/20191209-222622_MWMartin-Wallen_9568.jpg");  
+}
+
+div:nth-child(2){
+    grid-area: bb;
+    background-image: URL("https://www.sportzone.se/wp-content/uploads/2022/11/boxning-768x566.png");
+}
+
+div:nth-child(3){
+    grid-area: cc;
+    background-image: URL("https://www.fightercentre.com/wp-content/uploads/2019/06/20191209-222954_MWMartin-Wallen_9693.jpg");
+}
+
+div:nth-child(4){
+    grid-area: dd;
+    background-image: URL("https://malmo.se/images/18.7595c891188fbebc4fa5f99a/1693807048938/boxning_Colourbox.jpg");
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+    padding: 0.5rem;
+    background: #170546;
+    color: white;
+}

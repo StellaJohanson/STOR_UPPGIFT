@@ -15,36 +15,39 @@
     <a href="traningstider.html">Träningstider</a>
     <a href="bli_medlem.html">Bli medlem</a>
     <a href="kontakt.html">Kontakt</a>
+    <a href="om_oss.html">Om oss</a>
    
 </nav>
 <main>
     <section>
-        <h1>Grupper och priser</h1>
-        <h2>Motionärerna</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus perferendis corrupti adipisci rem necessitatibus quo vitae impedit quae nihil aliquid pariatur facere minus fugiat voluptatibus nesciunt, repellat, ducimus ratione! Hic?</p>
-        <p>Kostnad: 499 kr/termin</p>
-        <h2>Proffsen</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repudiandae optio dolorum itaque aspernatur minima hic deserunt eveniet, animi numquam voluptatibus qui! Rerum vitae vero excepturi reprehenderit! Ea, placeat perspiciatis?</p>
-        <p>Kostnad: 499 kr/termin
-        <h2>Newbies</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati totam dolore iusto maxime sint, tempora accusantium! Temporibus, error nulla, esse quisquam molestias aut soluta nihil aspernatur tenetur ipsam officia expedita?</p>
+        <h2>Grupper och priser</h2>
+        <h3>Motionärerna</h3>
+        <p>Den här gruppen passar den som vill boxas för motionens skull! Oberoende på tidigare erfarenheter kan alla boxas i gruppen Motionärerna. Här samlas vi alla för den fantastiska träningsformen som boxningen kan vara. Om man vill avancera och tävla i boxning börjar man i den här gruppen och när man blir godkänd kan man börja i Proffsen.  </p>
+        <p>Kostnad: 399 kr/termin</p>
+        <h3>Proffsen</h3>
+        <p>Om man blivit godkänd av en av våra tränare kan man börja i gruppen Proffsen. Här tränar vi för att ge vårat yttersta för att kunna avancera. I den här gruppen får man även tävla och i terminskostnaden ingår även betald anmälning till tävlingar.</p>
+        <p>Kostnad: 599 kr/termin
+        <h3>Newbies (5-13 år)</h3>
+        <p>Spelar ingen roll om man är nybörjare eller har boxats tidigare, här är alla barn upp till 13 år välkommna att prova på boxning. Här kan man komma för att prova på och man får tre gratis tillfällen innan man måste bestämma sig!</p>
         <p>Kostnad: 299 kr/termin</p>
-        <h2>Seniorerna</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis quasi, tempore quidem obcaecati magni, minima error molestias dolore est perferendis iusto? Quas dolor nemo vel! Atque odit amet alias fuga.</p>
+        <h3>Seniorerna (65+ år)</h3>
+        <p>Alla äldre damer och herrar är välkomna till den här gruppen. Här kan man komma på passen för lite vardags motion, såväl som hård träning. Du bestämmer tempot! </p>
         <p>Kostnad: 299 kr/termin</p>
-        <h1>Medlemsavgift</h1>
-        <p>Alla medlemmar betalar en medlemsavgift på 199 kr/år. I detta ingår försäkring och gratis inträdde på lokala träningar.</p>
+        <h3>Medlemsavgift</h3>
+        <p>Alla medlemmar betalar en medlemsavgift på 199 kr/år. I detta ingår försäkring och gratis inträdde på lokala tävlingar. All betalning sker via swish: 072 876 12 24 </p>
     </section>
     <section>
-        <h1>Bli medlem här!</h1>
+        <h2>Bli medlem här!</h2>
         <form action="kontakt.html" method="get">
             <label for="namn_1">Förnamn:</label>
-            <input type="text" name="name_1" id="name_1" placeholder="Skriv in ditt förnamn">
+            <input type="text" name="name_1" id="name_1" placeholder="Skriv in ditt förnamn" required>
             <label for="namn_2">Efternamn:</label>
-            <input type="text" name="name_2" id="name_2" placeholder="Skriv in ditt efternamn">
+            <input type="text" name="name_2" id="name_2" placeholder="Skriv in ditt efternamn" required>
             <label for="personnummer">Personnummer:</label>
-            <input type="text" name="personmummer" id="personumer" placeholder="ÅÅMMDD/XXXX">
-            <select name="grupper" id="grupper">
+            <input type="text" name="personmummer" id="personumer" placeholder="ÅÅMMDD/XXXX" required>
+            <label for="email">Epost:</label>
+            <input type="email" name="email" id="email" placeholder="Epost" required>
+            <select name="grupper" id="grupper" required>
                 <option value="newbies">Newbies (5-13 år)</option>
                 <option value="motionarerna">Motionärena</option>
                 <option value="proffsen">Proffsen</option>
